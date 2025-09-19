@@ -1,0 +1,13 @@
+my_tuple = (1, 2, 3, 4, 5, 6, "nishant", True, False, 1.5)
+print(my_tuple)
+print(my_tuple[0:5])
+print(my_tuple[5:])
+print(my_tuple[:5])
+# Tuple is immutable, but we can convert it to a list and then back to a tuple
+temp_list = list(my_tuple)
+print(temp_list)
+temp_list.append(11)
+print(temp_list)
+my_tuple = tuple(temp_list)
+print(my_tuple)
+print(type(my_tuple))
