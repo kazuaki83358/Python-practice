@@ -12,7 +12,7 @@ def text_to_speech(text, output_file):
     engine.save_to_file(text, output_file)
     engine.runAndWait()
 
-    print(f"✅ Audio saved successfully as '{output_file}'")
+    print(f"Audio saved successfully as '{output_file}'")
 
 with open("try.txt", "r") as file:
     txt = file.read().strip() 
